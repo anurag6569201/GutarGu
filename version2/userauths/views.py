@@ -1,7 +1,14 @@
 from django.shortcuts import render
 
-def welcome(request):
+
+def login(request):
     context={
 
     }
-    return render(request,"userauths/app/welcome.html",context)
+    return render(request,"userauths/app/sign-in.html",context)
+
+def register(request):
+    context={
+
+    }
+    return render(request,"userauths/app/sign-out.html",context)

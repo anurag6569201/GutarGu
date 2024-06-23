@@ -44,7 +44,10 @@ INSTALLED_APPS = [
 
     # custom apps
     'chat',
-
+    
+    # core app
+    'core',
+    
     # authentication
     'userauths',
 ]
