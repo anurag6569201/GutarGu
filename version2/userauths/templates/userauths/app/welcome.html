@@ -6,42 +6,73 @@
     <div class="logo">
         <a href="#" style="font-size: 20px;">GutarGu</a>
     </div>
-    <div class="nav-links">
+    <div class="nav-links pc-navlinks">
         <a href="#">Login</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-links mobile-navlinks">
+        <a href="#">Login</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="mobile-menu-toggle">
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </div>
 </div>
+<script>
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        var links = document.querySelector(".mobile-navlinks");
+        var hamburger = document.querySelector(".hamburger-menu");
+        if (links.style.display === "flex") {
+            links.style.display = "none";
+            hamburger.classList.remove("cross");
+        } else {
+            links.style.display = "flex";
+            hamburger.classList.add("cross");
+        }
+    });
+</script>
 <div class="container">
     <h1>Welcome to GutarGu</h1>
     <p>Explore the beauty of dynamic People through GutarGu</p>
-    <a href="#features" class="cta-button">Learn More</a>
+    <a href="#features" class="cta-button">Explore Now</a>
 </div>
-<div class="container">
+<div class="container" id="features" style="height: auto;border-radius: 15px;background: rgba(0, 0, 0, 0.253);">
     <h1>Features</h1>
-    <div class="features">
-        <div class="feature-item">
-            <h2>Feature 1</h2>
-            <p>Detail about Feature 1.</p>
+    <div class="features row">
+        <div class="feature-item col-md-4">
+            <h4>Voice and Video Calls</h4>
+            <p>High-quality voice and video calls with support for group calls.</p>
         </div>
-        <div class="feature-item">
-            <h2>Feature 2</h2>
-            <p>Detail about Feature 2.</p>
+        <div class="feature-item col-md-4">
+            <h4>Instant Messaging</h4>
+            <p>Real-time text with typing indicators and read receipts.</p>
         </div>
-        <div class="feature-item">
-            <h2>Feature 3</h2>
-            <p>Detail about Feature 3.</p>
+        <div class="feature-item col-md-4">
+            <h4>Media Sharing</h4>
+            <p>Send and receive images, documents, and other media files</p>
         </div>
-    </div>
-    <div class="logos">
-        <img src="https://via.placeholder.com/100" alt="Logo 1">
-        <img src="https://via.placeholder.com/100" alt="Logo 2">
-        <img src="https://via.placeholder.com/100" alt="Logo 3">
-        <img src="https://via.placeholder.com/100" alt="Logo 4">
+        <div class="feature-item col-md-4">
+            <h4>Group Chats</h4>
+            <p>Create and manage group chats with customizable controls.</p>
+        </div>
+        <div class="feature-item col-md-4">
+            <h4>Chat Bots</h4>
+            <p>Interact with AI-powered chatbots for various services.</p>
+        </div>
+        <div class="feature-item col-md-4">
+            <h4>Status Updates</h4>
+            <p>Share updates and stories with your contacts for 24 hours.</p>
+        </div>
     </div>
 </div>
-<div class="container">
+<div class="container slider-container">
     <h1>Image Slider</h1>
     <div class="slider">
         <div class="slides">
@@ -55,6 +86,31 @@
         </div>
     </div>
 </div>
+
+<div id="form">
+    <form action="" id="contact">
+        <div class="col-md-12">
+            <h1>Contact Form</h1>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter the Message..."></textarea>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="text-white mt-5">
+    <div class="text-center py-2">
+        <p class="mb-0">&copy; 2024 GutarGu. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
 <div class="particles"></div>
 <div class="star-background"></div>
 
