@@ -8,7 +8,7 @@
         <a href="#" style="font-size: 20px;">GutarGu</a>
     </div>
     <div class="nav-links pc-navlinks">
-        <a href="">Login</a>
+        <a href="{% url 'userauths:sign-in' %}">Login</a>
         <a href="#features">Features</a>
         <a href="#contact">Contact</a>
     </div>
@@ -42,7 +42,7 @@
 <div class="container">
     <h1>Welcome to GutarGu</h1>
     <p>Explore the beauty of dynamic People through GutarGu</p>
-    <a href="#features" class="cta-button">Explore Now</a>
+    <a href="{% url 'userauths:sign-in' %}" class="cta-button">Explore Now</a>
 </div>
 <div class="container" id="features" style="height: auto;border-radius: 15px;background: rgba(0, 0, 0, 0.253);">
     <h1>Features</h1>
@@ -110,9 +110,5 @@
         <p class="mb-0">&copy; 2024 GutarGu. All Rights Reserved.</p>
     </div>
 </footer>
-
-
-<div class="particles"></div>
-<div class="star-background"></div>
 
 {% endblock index %}
