@@ -18,7 +18,7 @@
             <div class="header">
                 <!-- Profile Picture -->
                 <div class="userImg">
-                    <img src="images/Avatar-10.jpeg" alt="" class="cover">
+                    <img src="{% static 'chat/images/Avatar-10.jpeg' %}" alt="" class="cover">
                 </div>
 
                 <!-- Dropdown -->
@@ -32,7 +32,7 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <img src="images/Sun-1.png" alt="" id="moon" class="icons" title="Light Mode"
+                    <img src="../../../static/chat/images/Sun-1.png" alt="" id="moon" class="icons" title="Light Mode"
                         aria-label="Light Mode">
                     <button role="button" class="icons" onclick="openStatus()">
                         <span class="">
@@ -98,7 +98,7 @@
                 <div class="block chat-list" onclick="openRightSide()">
                     <!-- Img -->
                     <div class="imgBox">
-                        <img src="images/Avatar-7.jpeg" class="cover">
+                        <img src="{% static 'chat/images/Avatar-7.jpeg' %}" class="cover">
                     </div>
                     <!-- Text -->
                     <div class="h-text">
@@ -136,7 +136,7 @@
                 <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
-                        <img src="images/avatar-3.png" class="cover">
+                        <img src="{% static 'chat/images/avatar-3.png' %}" class="cover">
                     </div>
                     <!-- Text -->
                     <div class="h-text">
@@ -173,7 +173,7 @@
                 <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
-                        <img src="images/Avatar-1.png" class="cover">
+                        <img src="{% static 'chat/images/Avatar-1.png' %}" class="cover">
                     </div>
                     <!-- Text -->
                     <div class="h-text">
@@ -204,7 +204,7 @@
                 <div class="block chat-list">
                     <!-- Img -->
                     <div class="imgBox">
-                        <img src="images/Avatar-2.png" class="cover">
+                        <img src="{% static 'chat/images/Avatar-2.png' %}" class="cover">
                     </div>
                     <!-- Text -->
                     <div class="h-text">
@@ -225,452 +225,6 @@
                                             </path>
                                         </svg>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 5 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-5.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Raoul" aria-label="Raoul">Raoul</h4>
-                            <p class="time">yesterday</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="tick-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"
-                                    aria-label="read" class="blue-tick">
-                                    <path fill="currentColor"
-                                        d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
-                                    </path>
-                                </svg>
-                            </div>
-
-                            <div class="chat-text-icon">
-                                <span class="thanks">oh okay.</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 6 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-16.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Joseph" aria-label="Joseph">Joseph</h4>
-                            <p class="time">8/12/2022</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="tick-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"
-                                    aria-label="read" class="blue-tick">
-                                    <path fill="currentColor"
-                                        d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
-                                    </path>
-                                </svg>
-                            </div>
-
-                            <div class="chat-text-icon">
-                                <span class="thanks">we are done with the project</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 7 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-11.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Diana" aria-label="Diana">Diana</h4>
-                            <p class="time">8/8/2022</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="chat-text-icon">
-                                <span class="thanks">please wait..</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 8 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/avatar-8.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Kabir" aria-label="Kabir">Kabir</h4>
-                            <p class="time">8/6/2022</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="tick-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"
-                                    aria-label="read" class="white-tick">
-                                    <path fill="currentColor"
-                                        d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
-                                    </path>
-                                </svg>
-                            </div>
-
-                            <div class="chat-text-icon">
-                                <span class="thanks">Happy Birthday</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 9 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-15.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Grace" aria-label="Grace">Grace</h4>
-                            <p class="time">3/4/2022</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="tick-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"
-                                    class="white-tick">
-                                    <path fill="currentColor"
-                                        d="m10.91 3.316-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
-                                    </path>
-                                </svg>
-                            </div>
-
-                            <div class="chat-text-icon">
-                                <span class="thanks">Thank you for your help.</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 10 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-10.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
-                            <p class="time">29/5/2022</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="chat-text-icon">
-                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
-                                    even WhatsApp, can
-                                    read or listen to them. Click to learn more.</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 11 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-12.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Danjuma" aria-label="Danjuma">Danjuma</h4>
-                            <p class="time">29/5/2022</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="chat-text-icon">
-                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
-                                    even WhatsApp, can
-                                    read or listen to them. Click to learn more.</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 12 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-13.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Mutiat" aria-label="Mutiat">Mutiat</h4>
-                            <p class="time">29/5/2022</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="chat-text-icon">
-                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
-                                    even WhatsApp, can
-                                    read or listen to them. Click to learn more.</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 13 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-14.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Mutiat" aria-label="Mutiat">Mutiat</h4>
-                            <p class="time">29/5/2022</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="chat-text-icon">
-                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
-                                    even WhatsApp, can
-                                    read or listen to them. Click to learn more.</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 14 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-17.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Alihu" aria-label="Alihu">Alihu</h4>
-                            <p class="time">29/5/2022</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="chat-text-icon">
-                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
-                                    even WhatsApp, can
-                                    read or listen to them. Click to learn more.</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 15 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-1.png" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
-                            <p class="time">29/5/2022</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="chat-text-icon">
-                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
-                                    even WhatsApp, can
-                                    read or listen to them. Click to learn more.</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 16 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/img16.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
-                            <p class="time">29/5/2022</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="chat-text-icon">
-                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
-                                    even WhatsApp, can
-                                    read or listen to them. Click to learn more.</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 17 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/img17.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
-                            <p class="time">29/5/2022</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="chat-text-icon">
-                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
-                                    even WhatsApp, can
-                                    read or listen to them. Click to learn more.</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 18 -->
-                <div class="block chat-list">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/img18.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
-                            <p class="time">29/5/2022</p>
-                        </div>
-                        <div class="message-chat">
-                            <div class="chat-text-icon">
-                                <span class="thanks">Messages are end-to-end encrypted. No one outside of this chat, not
-                                    even WhatsApp, can
-                                    read or listen to them. Click to learn more.</span>
-                                <div class="icon-more">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                        class="hide animate__animated animate__fadeInUp">
-                                        <path fill="currentColor"
-                                            d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                        </path>
-                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -737,15 +291,11 @@
                     </div>
                 </div>
 
-                <div class="a">
-                    <h3>A</h3>
-                </div>
-
                 <!-- Chats 1 -->
                 <div class="block top">
                     <!-- Img -->
                     <div class="imgBox">
-                        <img src="images/Avatar-7.jpeg" class="cover">
+                        <img src="{% static 'chat/images/Avatar-7.jpeg' %}" class="cover">
                     </div>
                     <!-- Text -->
                     <div class="h-text">
@@ -756,324 +306,6 @@
                             <p title="Free." aria-label="Free.">
                                 Free.
                             </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 2 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-1.png" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Abdul" aria-label="Abdul">Abdul</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Allah is sufficient for me." aria-label="Allah is sufficient for me.">Allah is
-                                sufficient for me.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 3 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/avatar-8.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 4 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-2.png" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Amelia" aria-label="Amelia">Amelia</h4>
-                        </div>
-                        <div class="message">
-                            <p title="God daughter" aria-label="God daughter">God daughter</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 5 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-5.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Abdul F5" aria-label="Abdul F5">Abdul F5</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 6 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-16.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Ade" aria-label="Ade">Ade</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 7 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-11.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adanma" aria-label="Adanma">Adanma</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 8 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/avatar-3.png" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Ashlar" aria-label="Ashlar">Ashlar</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Always Busy.." aria-label="Always Busy..">Always Busy..</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 9 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-15.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Alha" aria-label="Alha">Alha</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 10 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-10.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 11 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-12.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4>Adeboye</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 12 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-13.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adebisi" aria-label="Adebisi">Adebisi</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 13 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-14.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4>Lina</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 14 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-17.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Alihu" aria-label="Alihu">Alihu</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 15 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-1.png" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adejoke" aria-label="Adejoke">Adejoke</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 16 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/img16.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adunola" aria-label="Adunola">Adunola</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 17 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/img17.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Akolade" aria-label="Akolade">Akolade</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 18 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/img18.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Anikaede" aria-label="Anikaede">Anikaede</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
                         </div>
                     </div>
                 </div>
@@ -1129,15 +361,11 @@
             <!-- Chats -->
             <div class="chats-group">
 
-                <div class="a">
-                    <h3>A</h3>
-                </div>
-
                 <!-- Chats 1 -->
                 <div class="block top">
                     <!-- Img -->
                     <div class="imgBox">
-                        <img src="images/Avatar-7.jpeg" class="cover">
+                        <img src="{% static 'chat/images/Avatar-7.jpeg' %}" class="cover">
                     </div>
                     <!-- Text -->
                     <div class="h-text">
@@ -1148,324 +376,6 @@
                             <p title="Free." aria-label="Free.">
                                 Free.
                             </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 2 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-1.png" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Abdul" aria-label="Abdul">Abdul</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Allah is sufficient for me." aria-label="Allah is sufficient for me.">Allah is
-                                sufficient for me.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 3 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/avatar-8.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 4 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-2.png" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Amelia" aria-label="Amelia">Amelia</h4>
-                        </div>
-                        <div class="message">
-                            <p title="God daughter" aria-label="God daughter">God daughter</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 5 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-5.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Abdul F5" aria-label="Abdul F5">Abdul F5</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 6 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-16.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Ade" aria-label="Ade">Ade</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 7 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-11.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adanma" aria-label="Adanma">Adanma</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 8 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/avatar-3.png" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Ashlar" aria-label="Ashlar">Ashlar</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Always Busy.." aria-label="Always Busy..">Always Busy..</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 9 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-15.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Alha" aria-label="Alha">Alha</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 10 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-10.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 11 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-12.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Pricilia" aria-label="Pricilia">Pricilia</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 12 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-13.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adebisi" aria-label="Adebisi">Adebisi</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 13 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-14.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title=" aria-label=">/h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 14 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-17.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Alihu" aria-label="Alihu">Alihu</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 15 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/Avatar-1.png" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adejoke" aria-label="Adejoke">Adejoke</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 16 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/img16.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adunola" aria-label="Adunola">Adunola</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 17 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/img17.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Akolade" aria-label="Akolade">Akolade</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 18 -->
-                <div class="block">
-                    <!-- Img -->
-                    <div class="imgBox">
-                        <img src="images/img18.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Anikaede" aria-label="Anikaede">Anikaede</h4>
-                        </div>
-                        <div class="message">
-                            <p title="Hey there! I am using WhatsApp." aria-label="Hey there! I am using WhatsApp.">
-                                Hey
-                                there! I am using WhatsApp.</p>
                         </div>
                     </div>
                 </div>
@@ -1501,7 +411,7 @@
                 <div class="top" onclick="openProfile()">
                     <!-- Img -->
                     <div class="imgBox">
-                        <img src="images/Avatar-10.jpeg" alt="" class="cover">
+                        <img src="{% static 'chat/images/Avatar-10.jpeg' %}" alt="" class="cover">
                     </div>
                     <!-- Text -->
                     <div class="h-text">
@@ -1728,7 +638,7 @@
                 <!-- Profile -->
                 <div class="top">
                     <div class="imgBox">
-                        <img src="images/Avatar-10.jpeg" alt="" class="cover animate__animated animate__fadeIn">
+                        <img src="{% static 'chat/images/Avatar-10.jpeg' %}" alt="" class="cover animate__animated animate__fadeIn">
                         <div class="middle">
                             <div aria-disabled="false" role="button" class="icons-profile" data-tab="2" title="Camera"
                                 aria-label="Camera">
@@ -2265,7 +1175,7 @@
             <div class="chats-default">
                 <!-- Images -->
                 <div class="img-top">
-                    <img src="images/dissapering.png" alt="" class="disappear">
+                    <img src="{% static 'chat/images/dissapering.png' %}" alt="" class="disappear">
                 </div>
 
                 <!-- Chats 1 -->
@@ -2446,7 +1356,7 @@
                 <div class="block top">
                     <!-- Img -->
                     <div class="imgBox">
-                        <img src="images/Avatar-7.jpeg" class="cover">
+                        <img src="{% static 'chat/images/Avatar-7.jpeg' %}" class="cover">
                     </div>
                     <!-- Text -->
                     <div class="h-text">
@@ -3018,7 +1928,7 @@
                 <!-- Profile Picture -->
                 <div class="imgText">
                     <div class="userImg">
-                        <img src="images/Avatar-10.jpeg" alt="" class="cover">
+                        <img src="{% static 'chat/images/Avatar-10.jpeg' %}" alt="" class="cover">
                     </div>
                     <h4 title="My Status" aria-label="My Status">My Status<br><span aria-label="No Updates">No
                             updates</span>
@@ -3047,7 +1957,7 @@
                             stroke-width="4"></circle>
                     </svg>
                     <div class="imgBox">
-                        <img src="images/Avatar-7.jpeg" class="cover">
+                        <img src="{% static 'chat/images/Avatar-7.jpeg' %}" class="cover">
                     </div>
                     <!-- Text -->
                     <div class="h-text">
@@ -3075,7 +1985,7 @@
                         </circle>
                     </svg>
                     <div class="imgBox">
-                        <img src="images/avatar-3.png" class="cover">
+                        <img src="{% static 'chat/images/avatar-3.png' %}" class="cover">
                     </div>
                     <!-- Text -->
                     <div class="h-text">
@@ -3098,358 +2008,12 @@
                             stroke-width="4"></circle>
                     </svg>
                     <div class="imgBox">
-                        <img src="images/Avatar-1.png" class="cover">
+                        <img src="{% static 'chat/images/Avatar-1.png' %}" class="cover">
                     </div>
                     <!-- Text -->
                     <div class="h-text">
                         <div class="head">
                             <h4 title="Olivia" aria-label="Olivia">Olivia</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 4 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-width="4">
-                        </circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/Avatar-2.png" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Amelia" aria-label="Amelia">Amelia</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 5 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
-                            stroke-width="4"></circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/Avatar-5.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Raoul" aria-label="Raoul">Raoul</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 6 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
-                            stroke-width="4"></circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/Avatar-16.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Joseph" aria-label="Joseph">Joseph</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 7 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="68.53981633974483 10 68.53981633974483 10 68.53981633974483 10 68.53981633974483 10"
-                            stroke-width="4">
-                        </circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/Avatar-11.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Diana" aria-label="Diana">Diana</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 8 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
-                            stroke-width="4">
-                        </circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/avatar-8.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Kabir" aria-label="Kabir">Kabir</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 9 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
-                            stroke-width="4"></circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/Avatar-15.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Grace" aria-label="Grace">Grace</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 10 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
-                            stroke-width="4"></circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/Avatar-10.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Adeboye" aria-label="Adeboye">Adeboye</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 11 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
-                            stroke-width="4"></circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/Avatar-12.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Danjuma" aria-label="Danjuma">Danjuma</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 12 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
-                            stroke-width="4"></circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/Avatar-13.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Bankole" aria-label="Bankole">Bankole</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 13 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
-                            stroke-width="4"></circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/Avatar-14.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Mutiat" aria-label="Mutiat">Mutiat</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 14 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
-                            stroke-width="4"></circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/Avatar-17.jpeg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Alihu" aria-label="Alihu">Alihu</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 15 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
-                            stroke-width="4"></circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/Avatar-1.png" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 16 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
-                            stroke-width="4"></circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/img16.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 17 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
-                            stroke-width="4"></circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/img17.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
-                        </div>
-                        <div class="message">
-                            <p>today at 5:19 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chats 18 -->
-                <div class="block">
-                    <!-- Img -->
-                    <svg class="circle" width="48" height="48" viewBox="0 0 104 104">
-                        <circle cx="52" cy="52" r="50" fill="none" stroke-linecap="round" class="stroke"
-                            stroke-dashoffset="387.69908169872417"
-                            stroke-dasharray="34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10 34.87989505128276 10"
-                            stroke-width="4"></circle>
-                    </svg>
-                    <div class="imgBox">
-                        <img src="images/img18.jpg" class="cover">
-                    </div>
-                    <!-- Text -->
-                    <div class="h-text">
-                        <div class="head">
-                            <h4 title="Shayan" aria-label="Shayan">Shayan</h4>
                         </div>
                         <div class="message">
                             <p>today at 5:19 PM</p>
@@ -3498,7 +2062,7 @@
                 <div class="header">
                     <div class="imgText" role="button" onclick="openChatAbout()">
                         <div class="userImg">
-                            <img src="images/Avatar-7.jpeg" alt="" class="cover">
+                            <img src="{% static 'chat/images/Avatar-7.jpeg' %}" alt="" class="cover">
                         </div>
                         <h4 title="Shayan" aria-label="Shayan">Shayan<br><span aria-label="online">online</span></h4>
                     </div>
@@ -4546,7 +3110,7 @@
                 <div class="chats-chatAbout">
                     <div class="img-about">
                         <div class="img-Ani">
-                            <img src="images/Avatar-7.jpeg" class="img-animated" alt="" draggable="false">
+                            <img src="{% static 'chat/images/Avatar-7.jpeg' %}" class="img-animated" alt="" draggable="false">
                         </div>
 
                         <div class="text-Ani">
@@ -4583,9 +3147,9 @@
                                 </div>
                             </div>
                             <div class="media-links">
-                                <img src="images/download.jpeg" alt="" class="avatar" draggable="false">
-                                <img src="images/download.jpeg" alt="" class="avatar" draggable="false">
-                                <img src="images/download.jpeg" alt="" class="avatar" draggable="false">
+                                <img src="{% static 'chat/images/download.jpeg' %}" alt="" class="avatar" draggable="false">
+                                <img src="{% static 'chat/images/download.jpeg' %}" alt="" class="avatar" draggable="false">
+                                <img src="{% static 'chat/images/download.jpeg' %}" alt="" class="avatar" draggable="false">
                             </div>
                         </div>
                     </div>

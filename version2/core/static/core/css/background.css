@@ -11,7 +11,7 @@ html {
     min-height: 100%;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to bottom, #0d0d2b, #000000);
+    background: linear-gradient(to bottom, #202c33, #000000);
     color: white;
 }
 
@@ -21,16 +21,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #0C0C27;
+    background: #202c33;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ff4081;
+    background: #445561;
     border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #e00070;
+    background: #556a79;
 }
 
 /* Small stars background */

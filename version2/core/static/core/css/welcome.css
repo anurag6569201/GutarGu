@@ -15,8 +15,8 @@
 }
 
 .navbar.sticky {
-    background: #0C0C27;
-    color: #ff4081;
+    background: #202c33;
+    color: #00a884;
     top: 0;
     left: 0;
     right: 0;
@@ -65,19 +65,24 @@ p {
     margin-bottom: 1em;
 }
 
+#features h2,
+.slider-container h2,
+#contact h2{
+    color: #00a884;
+}
 .cta-button {
-    background: linear-gradient(135deg, #ff4081, #e00070);
+    background: linear-gradient(135deg, #00a884, #01644f);
     padding: 1em 2em;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    box-shadow: 0 0 15px rgba(255, 64, 129, 0.5);
+    box-shadow: 0 0 15px #01644fbb;
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta-button:hover {
-    background: linear-gradient(135deg, #e00070, #ff4081);
-    box-shadow: 0 0 25px rgba(255, 64, 129, 0.7);
+    background: linear-gradient(135deg, #01644f, #00a884);
+    box-shadow: 0 0 25px #01644fe0;
 }
 
 
@@ -87,10 +92,11 @@ p {
     justify-content: space-evenly;
     align-items: baseline;
     padding: 20px;
+    font-size: 12px;
 }
 
 .features h4{
-    color: #ff4081;
+    color: #00a884;
     font-weight: 600;
 }
 .feature-item {
@@ -105,6 +111,7 @@ p {
     overflow: hidden;
     position: relative;
     margin: 20px auto;
+    font-size: 12px;
 }
 
 .slides {
@@ -145,22 +152,23 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 12px;
 }
 #form form{
     width: 80%;
     z-index: 2;
 }
-#form form h1{
+#form form h2{
     text-align: center;
 }
 #form form label{
-    color: #ff4081;
+    color: #00a884;
     font-weight: 600;
 }
 #form form textarea,
 #form form input{
     background-color: transparent;
-    border-color: #ff4081;
+    border-color: #202c33;
     color: white;
 }
 #form form textarea::placeholder,
@@ -181,7 +189,7 @@ p {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #ff4081;
+    background-color: #00a884;
     margin: 3px 0;
     transition: 0.4s;
 }

@@ -73,9 +73,9 @@ const moon = document.getElementById("moon")
 moon.onclick = function () {
     document.body.classList.toggle("light-theme");
     if (document.body.classList.contains("light-theme")) {
-        moon.src = "images/Moon-1.png";
+        moon.src = "../../../static/chat/images/Moon-1.png";
     } else {
-        moon.src = "images/Sun-1.png";
+        moon.src = "../../../static/chat/images/Sun-1.png";
     }
 }
 
