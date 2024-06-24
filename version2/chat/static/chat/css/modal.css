@@ -197,7 +197,10 @@
     border-radius: 3px;
     padding: 7px 22px;
 }
-
+.btn2 a{
+    text-decoration: none;
+    color: var(--modal-btn-text);
+}
 .modal .modal-dialog .modal-content .m-btn .btn2 {
     background: var(--modal-btn2);
     border: 1.5px solid var(--modal-btn2);

@@ -29,7 +29,7 @@
 }
 
 .box {
-    border: 1px solid #ff4081;
+    border: 1px solid #202c33;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 7px;
 }
@@ -73,7 +73,7 @@
 
 .animate-input {
     height: 36px;
-    border: 1px solid #ff4081;
+    border: 1px solid #202c33;
     border-radius: 3px;
     position: relative;
 }
@@ -96,7 +96,7 @@
     padding: 9px 8px 7px;
     border: 0;
     outline: 0;
-    background-color: transparent;
+    background-color: transparent !important;
     color: white;
 }
 
@@ -131,19 +131,18 @@
 .btn-group {
     padding: 8px 40px;
 }
-
 .btn-login {
-    background: linear-gradient(135deg, #ff4081, #e00070);
+    background: linear-gradient(135deg, #00a884, #01644f);
     padding: 5px 10px;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    box-shadow: 0 0 15px rgba(255, 64, 129, 0.5);
+    box-shadow: 0 0 15px #01644fbb;
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 .btn-login:hover{
-    background: linear-gradient(135deg, #e00070, #ff4081);
-    box-shadow: 0 0 25px rgba(255, 64, 129, 0.7);
+    background: linear-gradient(135deg, #01644f, #00a884);
+    box-shadow: 0 0 25px #01644fe0;
 }
 button:disabled {
     background-color: rgba(0, 149, 246, 0.3);
@@ -166,7 +165,7 @@ button:disabled {
 .divine div:nth-child(3) {
     flex-grow: 1;
     height: 1px;
-    background-color: #ff4081;
+    background-color: #202c33;
     position: relative;
     top: 0.45em;
 }
