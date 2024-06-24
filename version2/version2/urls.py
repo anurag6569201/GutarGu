@@ -23,4 +23,5 @@ urlpatterns = [
     # custom apps urls
     path('',include('core.urls')),
     path('user/',include('userauths.urls')),
+    path('chat/',include('chat.urls')),
 ]
