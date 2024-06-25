@@ -2,6 +2,7 @@ from enum import unique
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from PIL import Image
 
 class User(AbstractUser):
     email = models.EmailField(unique=True)
@@ -14,3 +15,25 @@ class User(AbstractUser):
     def __str__(self):
         return self.username
     
+def user_directory_path(instance,filename):
+    return 'user_{0}/{1}'.format(instance.user.id,filename)
+
+class Profile(models.Model):
+    user=models.OneToOneField(User,on_delete=models.CASCADE)
+    full_name=models.CharField(max_length=100)
+    bio=models.CharField(max_length=100)
+    image=models.ImageField(upload_to=user_directory_path,default="default.png")
+
+    def __str__(self):
+        try:
+            return f"{self.full_name}-{self.user.username}-{self.user.email}"
+        except:
+            return self.user.username
+        
+    def save(self,*args,**kwargs):
+        super().save(*args,**kwargs)
+        img=Image.open(self.image.path)
+        if img.height>300 or img.width>300:
+            output_size=(300,300)
+            img.thumbnail(output_size)
+            img.save(self.image.path)
