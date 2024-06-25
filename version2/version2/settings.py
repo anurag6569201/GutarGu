@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'import_export',
-    
+
     # custom apps
     'chat',
     
@@ -138,3 +138,4 @@ MEDIA_URL='/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL='userauths.User'
+LOGIN_URL = '/user/sign-in/'
