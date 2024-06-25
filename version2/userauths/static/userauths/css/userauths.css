@@ -96,7 +96,7 @@
     padding: 9px 8px 7px;
     border: 0;
     outline: 0;
-    background-color: transparent !important;
+    background-color: transparent;
     color: white;
 }
 
@@ -144,10 +144,6 @@
     background: linear-gradient(135deg, #01644f, #00a884);
     box-shadow: 0 0 25px #01644fe0;
 }
-button:disabled {
-    background-color: rgba(0, 149, 246, 0.3);
-}
-
 .divine {
     padding: 10px 40px 18px;
     display: flex;
