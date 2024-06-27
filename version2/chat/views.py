@@ -2,6 +2,9 @@ from django.shortcuts import render
 from chat.models import Messages
 from django.contrib.auth.decorators import login_required
 
+from django.http import HttpResponse
+from userauths.models import User
+
 @login_required
 def chatpage(request):
     user=request.user
@@ -45,3 +48,14 @@ def directs(request,username):
         'active_direct':active_direct,
     }
     return render(request,'chat/app/chatpage.html',context)
+
+def sendDirect(request):
+    if request.method=="POST":
+        from_user=request.user
+        to_user_username=request.POST['to_user']
+        body=request.POST['body']
+
+        to_user=User.objects.get(username=to_user_username)
+        Messages.sender_message(from_user,to_user,body)
+        success="Message Sent"
+        return HttpResponse(success)

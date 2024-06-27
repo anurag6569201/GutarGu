@@ -6,4 +6,5 @@ app_name="chat"
 urlpatterns=[
     path("",views.chatpage,name="chatpage"),
     path("direct/<username>",views.directs,name="directs"),
+    path("direct/",views.sendDirect,name="send-direct"),
 ]
