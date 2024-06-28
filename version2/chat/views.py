@@ -47,7 +47,7 @@ def directs(request,username):
         'user':user,
         'active_direct':active_direct,
     }
-    return render(request,'chat/app/chatpage.html',context)
+    return render(request,'chat/app/chatpageuser.html',context)
 
 def sendDirect(request):
     if request.method=="POST":
